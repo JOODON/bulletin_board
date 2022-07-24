@@ -20,8 +20,6 @@
             crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script rel="script" src="main.js"></script>
-
     <style>
         body{
             background: #f5f4e6;
@@ -89,15 +87,58 @@
             border-radius: 10px;
             color: #ACABAB;
         }
+
+
+
+        .main-title{
+            width: 1280px;
+            margin: 0 auto;
+        }
+        .album{
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            margin: 0 auto ;
+            margin-top: 50px;
+            border:3px solid #ACABAB;
+        }
+        .imags{
+            position: relative;
+            left: 0px;
+            display: flex;
+            height: 720px;
+            transition: transform 0.5s;
+        }
+        button,button:active,button:focus{
+            width: 200px; height: 40px; border: #ACABAB;
+            color: black; background: #EEE3F8;
+        }
+        button:hover{
+            background: #EEE3F8;
+            color: #fcfcfc;
+        }
+        button:disabled{
+            background-color: #777474;
+        }
+        .bt{
+            width: 1280px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .prev,.next{
+            border: 1px solid #ACABAB;
+        }
+
     </style>
 </head>
 <body>
-
 <div class="header">
     <a href="#" class="main"><i class="fa-solid fa-house-chimney"></i> Home</a>
     <a href="#" class="Search"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
     <a href="#" class="Contact"><i class="fa-regular fa-address-book"></i> Contact</a>
-    <a href="login/login.jsp" class="login"><i class="fa-regular fa-user"></i> login</a>
+    <a href="#" class="login"><i class="fa-regular fa-user"></i> login</a>
 </div>
 </nav>
 
@@ -117,10 +158,23 @@
         <button type="submit"class="sub-bt">제출하기</button>
     </div>
 </div>
-<div class="main-title">
-    <h1>Hello bulletin board</h1>
+
+<div class="main-page">
+    <div class="main-title">
+        <h1>Hello bulletin board</h1>
+    </div>
+    <div class="album">
+        <div class="imags">
+            <img src=슬라이더1.jpg>
+            <img src="슬라이더2.jpg">
+            <img src="슬라이더3.jpg">
+        </div>
+    </div>
+    <div class="bt">
+        <button class="prev">PREV</button>
+        <button class="next">NEXT</button>
+    </div>
 </div>
-</body>
-</html>
+<script rel="script" src="main.js"></script>
 </body>
 </html>
